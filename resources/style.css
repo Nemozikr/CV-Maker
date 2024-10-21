@@ -94,12 +94,6 @@ h2::after {
     margin: 10px auto 0 auto; /* Centers the line and adds space between heading and line */
 }   
 
-.certifications,
-.workExperience,
-.education {
-  display: flex;
-}
-
 .qualifAndExperience {
     display: inline-flex; 
     width: 100%;
