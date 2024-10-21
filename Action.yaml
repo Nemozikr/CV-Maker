@@ -1,0 +1,6 @@
+- name: HTML to PDF              
+  uses: fifsky/html-to-pdf-action@v0.1.0
+  with:
+    htmlFile: ./index.html
+    outputFile: ./CV_EdwardSinghBhomrah.pdf
+    pdfOptions: '{"format": "A4"}'
