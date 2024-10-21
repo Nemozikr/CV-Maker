@@ -71,6 +71,7 @@ header {
 }
 
 main {
+    min-width: 400px;
     left: 10%;
     display: block;
     width: 80%;
@@ -92,6 +93,12 @@ h2::after {
     background-color: black; /* Line color */
     margin: 10px auto 0 auto; /* Centers the line and adds space between heading and line */
 }   
+
+.certifications,
+.workExperience,
+.education {
+  display: flex;
+}
 
 .qualifAndExperience {
     display: inline-flex; 
@@ -129,7 +136,6 @@ h2::after {
 }
 
 .Education {
-    display: none
 }
 
 footer {
