@@ -1,0 +1,15 @@
+            - name: HTML to PDF
+  # You may pin to the exact commit or the version.
+  # uses: fifsky/html-to-pdf-action@f53ada614db3051d00333bac1fda7894dbce585d
+  uses: fifsky/html-to-pdf-action@v0.1.0
+  with:
+    # html file path
+    htmlFile: ./index.html
+    # output file path
+    outputFile: ./CVEdwardSinghBhomrah.pdf
+    # PDF options as described here:
+https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#pagepdfoptions -
+#Needs to be in JSON format, e.g. `{"format": "A4", "pageRanges": "1"}`
+
+    pdfOptions: # optional, default is {}
+          
