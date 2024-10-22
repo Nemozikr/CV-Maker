@@ -54,6 +54,11 @@ table, th, td {
     opacity: 1; /* Fade in effect */
 }
 
+h4 {
+    margin: 1px 0;
+    text-decoration: underline solid black;
+}
+
 h4::after {
     content: "";
     display: block;
@@ -104,7 +109,6 @@ main h2 {
 .keyQualifications,
 .langAndTechExp {
     flex-basis: 48%; /* Reduces width slightly to tighten layout */
-    margin: 0 1%;
     flex-direction: column;
     display: inline-flex;
 }
