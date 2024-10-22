@@ -16,6 +16,15 @@ h2 {
     text-align: center; 
     text-decorations: underline black solid;
 }   
+h2::after {
+    content: ".";
+    width: 100%;
+    background-color: black;
+    font-size: 1px;
+    height: 1px;
+    display: block;
+    margin: 5px auto 0 auto;
+}
 
 table, th, td {
     border: 1px black solid;
