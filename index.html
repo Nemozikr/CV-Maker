@@ -7,6 +7,148 @@
         <meta name="description" content="Edward S. B. &#39;s CV">
         <meta name="author" content="Edward Singh Bhomrah">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+* {
+    margin: 0;
+    padding: 0;
+    /*border: 1px red solid;*/
+}
+
+span {
+    display: inline-block;
+}
+
+h2 {
+    margin-top: 1%;
+    position: relative; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}   
+
+table, th, td {
+    border: 1px black solid;
+    border-collapse: collapse;
+}
+
+.toolTip {
+    position: relative; 
+    display: inline-block;
+    text-decoration: underline solid red;
+}
+
+.toolTipText {
+    visibility: hidden; /* Hide the tooltip by default */
+    width: 120px; /* Set a width for the tooltip */
+    background-color: black; /* Background color */
+    color: #fff; /* Text color */
+    text-align: center; /* Center the text */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Padding inside the tooltip */
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1; /* Sit on top of other elements */
+    bottom: 125%; /* Position above the button */
+    left: 50%; /* Center it */
+    margin-left: -60px; /* Centering adjustment */
+    
+    /* Fade-in animation */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s; /* Transition for fade effect */
+}
+
+.toolTip:hover .toolTipText {
+    visibility: visible; /* Show tooltip on hover */
+    opacity: 1; /* Fade in effect */
+}
+
+h4::after {
+    content: "";
+    display: block;
+    height: 2px;
+    margin: 10px auto 0 auto;
+}
+
+div ul {
+    padding-left: 2em;
+}
+
+header {
+    display: block;
+    width: 100%;
+    top: 5%;
+    text-align: center;
+}
+
+main {
+    min-width: 400px;
+    left: 10%;
+    display: block;
+    width: 80%;
+    position: relative;
+    top: 5%;
+}
+
+main h2 {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 100%; /* Adjust line width */
+    height: 2px; /* Set uniform line thickness */
+    background-color: black; /* Line color */
+    margin: 10px auto 0 auto; /* Centers the line and adds space between heading and line */
+}   
+
+.qualifAndExperience {
+    display: inline-flex; 
+    width: 100%;
+    align-items: baseline; 
+    justify-content: start;
+}
+
+.qualifAndExperience h2 {
+    text-align: left; 
+    min-width: 200px; /* Set a minimum width to avoid being too narrow */
+}
+
+/* Ensure the other sections take full width */
+.keyQualifications,
+.langAndTechExp {
+    flex-basis: 100%; 
+    margin-top: 20px; 
+    flex-direction: column;
+    display: inline-flex;
+}
+
+.tableContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tableContainer table {
+    width: 50%;
+}
+
+.date {
+    position: absolute;
+    right: 0;
+}
+
+.Education {
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    bottom: 0%;
+}
+        </style>
     </head>
     <!--^ HEAD ^-->
     <!--V BODY V-->
