@@ -23,12 +23,12 @@ jobs:
       - name: html to pdf
         uses: fifsky/html-to-pdf-action@master
         with:
-          htmlFile: ././index.html
-          outputFile: ./cv.pdf
+          htmlFile: cv/index.html
+          outputFile: ./generated/cv.pdf
           pdfOptions: '{"margin": {"top": "1px", "left": "100px", "right": "100px", "bottom": "100px"}}'
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: Example PDF
-          path: ./cv.pdf
+          path: ./generated
