@@ -54,15 +54,6 @@ table, th, td {
     opacity: 1; /* Fade in effect */
 }
 
-h2::after {
-    width: 100%;
-    content: "";
-    display: block;
-    height: 2px;
-    background-color: black;
-    margin: 10px auto 0 auto;
-}
-
 h4::after {
     content: "";
     display: block;
