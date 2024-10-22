@@ -14,12 +14,8 @@ h2 {
     margin-bottom: 1%;
     position: relative; 
     text-align: center; 
+    text-decorations: underline black solid;
 }   
-
-h2::after {
-    content: " ";
-    text-decoration: underline black solid;
-}
 
 table, th, td {
     border: 1px black solid;
