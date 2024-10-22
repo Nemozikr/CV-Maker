@@ -139,8 +139,17 @@ h2::after {
 }
 
 .container {
-    display: flex;
-    float: left;
+    display: inline-flex; 
+    width: 100%;
+    align-items: baseline; 
+    justify-content: start;
+}
+
+.container > div {
+    flex-basis: 100%; 
+    margin-top: 20px; 
+    flex-direction: column;
+    display: inline-flex;
 }
 
 footer {
