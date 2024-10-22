@@ -24,6 +24,7 @@ table, th, td {
     position: relative; 
     display: inline-block;
     text-decoration: underline solid red;
+    font-size: inherit;
 }
 
 .toolTipText {
@@ -45,6 +46,7 @@ table, th, td {
     /* Fade-in animation */
     opacity: 0; /* Initially hidden */
     transition: opacity 0.3s; /* Transition for fade effect */
+    font-size: inherit;
 }
 
 .toolTip:hover .toolTipText {
@@ -139,6 +141,7 @@ h2::after {
 }
 
 .container {
+    font-size: inherit;
     display: inline-flex; 
     width: 100%;
     align-items: baseline; 
