@@ -58,7 +58,7 @@ h2::after {
     content: "";
     display: block;
     height: 2px;
-    border: 1px black solid;
+    background-color: black;
     margin: 10px auto 0 auto;
 }
 
