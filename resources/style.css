@@ -105,6 +105,14 @@ h2::after {
     margin: 10px auto 0 auto; /* Centers the line and adds space between heading and line */
 }   
 
+h3::before {
+    content: "";
+    display: block;
+    width: 100%
+    height: 1px;
+    margin: 10px auto 0 auto;
+}
+
 .qualifAndExperience {
     display: inline-flex; 
     width: 100%;
