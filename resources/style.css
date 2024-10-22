@@ -17,7 +17,7 @@ h2 {
 }   
 
 h2::after {
-    content: "";
+    content: " ";
     text-decoration: underline black solid;
 }
 
