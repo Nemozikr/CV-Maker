@@ -25,7 +25,7 @@ jobs:
         with:
           htmlFile: ./index.html
           outputFile: ./cv.pdf
-          pdfOptions: '{"margin": {"top": "5%", "left": "50px", "right": "50px", "bottom": "100px"}}'
+          pdfOptions: '{"margin": {"top": "10px", "left": "50px", "right": "50px", "bottom": "100px"}}'
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
