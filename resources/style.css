@@ -55,6 +55,7 @@ table, th, td {
 }
 
 h2::after {
+    width: 100%;
     content: "";
     display: block;
     height: 2px;
