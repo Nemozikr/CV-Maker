@@ -31,4 +31,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: cv PDF
-          path: Nemozikr.GitHub.io/MyCV/.github/generated/
+          path: nemozikr.github.io/MyCV/.github/generated/
