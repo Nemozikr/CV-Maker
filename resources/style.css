@@ -140,9 +140,7 @@ h2::after {
 
 .container {
     display: flex;
-}
-
-.Education {
+    float: left;
 }
 
 footer {
