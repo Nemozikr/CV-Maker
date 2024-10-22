@@ -101,8 +101,8 @@ main h2 {
 /* Ensure the other sections take full width */
 .keyQualifications,
 .langAndTechExp {
-    flex-basis: 100%; 
-    margin-top: 20px; 
+    flex-basis: 48%; /* Reduces width slightly to tighten layout */
+    margin: 0 1%;
     flex-direction: column;
     display: inline-flex;
 }
