@@ -5,7 +5,7 @@
 }
 
 span {
-    display: inline-block;
+    display: inline;
     font-size: inherit;
 }
 
@@ -89,6 +89,7 @@ main h2 {
 
 .qualifAndExperience {
     display: inline-flex; 
+    box-sizing: border-box;
     width: 100%;
     align-items: baseline; 
     justify-content: start;
