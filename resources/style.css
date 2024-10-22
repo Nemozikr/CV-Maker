@@ -86,16 +86,6 @@ main h2 {
     width: 100%;
 }
 
-h2::after {
-    content: "";
-    display: block;
-    width: 100%; /* Adjust line width */
-    height: 1px; /* Set uniform line thickness */
-    line-height: 0.5;
-    background-color: black; /* Line color */
-    margin: 10px auto 0 auto; /* Centers the line and adds space between heading and line */
-}   
-
 h3::before {
     content: "";
     display: block;
