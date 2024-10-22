@@ -148,21 +148,6 @@ h3::before {
     right: 0;
 }
 
-.container {
-    font-size: inherit;
-    display: flex; 
-    width: 100%;
-    align-items: baseline; 
-    justify-content: start;
-}
-
-.container > div {
-    flex-basis: 100%; 
-    margin-top: 20px; 
-    flex-direction: column;
-    display: inline-flex;
-}
-
 footer {
     display: flex;
     position: fixed;
