@@ -23,7 +23,6 @@ table, th, td {
 .toolTip {
     position: relative; 
     display: inline-block;
-    text-decoration: underline solid red;
     font-size: inherit;
 }
 
