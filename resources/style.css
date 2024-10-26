@@ -144,17 +144,18 @@ main h2 {
 
 #Education {
     display: inline-flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: baseline;
     flex-flow: row;
     width: 100%;
     box-sizing: border-box;
+    margin-bottom: 50px;
 }
 
 .educ-part {
     display: inline-block;
     position: relative;
-    width: 50%;
+    width: 45%;
 }
 
 footer {
