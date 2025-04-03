@@ -17,7 +17,7 @@ h2 {
     text-decoration: underline black solid;
 }   
 h2::after {
-    content: " ";
+    content: ".";
     width: 100%;
     background-color: black;
     font-size: 1px;
@@ -65,7 +65,8 @@ table, th, td {
 }
 
 h4 {
-    margin-bottom: 5px;
+    margin-top: 1px;
+    margin-bottom: 2px
 }
 
 h4::after {
@@ -101,24 +102,25 @@ main h2 {
     width: 100%;
 }
 
-#qualifAndExperience {
+.qualifAndExperience {
     display: inline-flex; 
-    align-items: baseline; 
-    justify-content: flex-start;
-    flex-flow: row wrap;
     box-sizing: border-box;
     width: 100%;
+    align-items: baseline; 
+    justify-content: start;
 }
 
-#qualifAndExperience h2 {
+.qualifAndExperience h2 {
     text-align: left; 
     min-width: 200px; /* Set a minimum width to avoid being too narrow */
 }
 
 /* Ensure the other sections take full width */
-#keyQualifications,
-#langAndTechExp {
+.keyQualifications,
+.langAndTechExp {
     flex-basis: 48%; /* Reduces width slightly to tighten layout */
+    flex-direction: column;
+    display: inline-flex;
 }
 
 .tableContainer {
@@ -130,39 +132,14 @@ main h2 {
     width: 50%;
 }
 
-#workExperience {
-    display: flex;
-    flex-flow: column;
-}
-
 .date {
-    text-align: right;
     position: absolute;
     right: 0;
-    display: inline-block;
-}
-
-#Education {
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-flow: row;
-    width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 50px;
-}
-
-.educ-part {
-    display: inline-block;
-    position: relative;
-    width: 45%;
 }
 
 footer {
-    display: block;
-    position: relative;
+    display: flex;
+    position: fixed;
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    top: 5%;
+    bottom: 0%;
 }

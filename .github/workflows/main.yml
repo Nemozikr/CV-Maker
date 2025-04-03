@@ -1,18 +1,14 @@
-name: Test Build Pdf
+name: Build CV PDF
 
 on: [push, pull_request]
 
 env:
-  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
+  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: false
 
 jobs:
   html_to_pdf:
     name: Generate PDF
-    runs-on: ${{ matrix.os }}
-    strategy:
-      fail-fast: false
-      matrix:
-        os: [ubuntu-latest]
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
@@ -20,15 +16,25 @@ jobs:
         with:
           fetch-depth: 3
 
-      - name: html to pdf
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with: 
+          node-version: 20
+
+      - name: Convert HTML to PDF
         uses: fifsky/html-to-pdf-action@master
         with:
           htmlFile: ./index.html
           outputFile: ./cv.pdf
           pdfOptions: '{"margin": {"top": "50px", "bottom": "50px"}}'
 
-      - name: Upload artifacts
+      - name: Upload CV as Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: cv.pdf
+          name: cv-${{ github.sha   }}.pdf
           path: ./cv.pdf
+          retention-days: 31
+
+permissions: 
+  contents: read
+  actions: write
